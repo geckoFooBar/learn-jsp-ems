@@ -30,7 +30,7 @@ src/
     ├── employees.jsp               # The View (UI rendered with Tailwind & JSTL)
     └── WEB-INF/
         └── lib/                    # Required JAR files (MySQL driver, JSTL)# 🏢 Employee Management Dashboard
-
+```
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Tomcat](https://img.shields.io/badge/Tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
@@ -89,3 +89,4 @@ CREATE TABLE employees (
     name VARCHAR(100),
     department VARCHAR(50)
 );
+```

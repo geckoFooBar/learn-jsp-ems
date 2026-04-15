@@ -1,36 +1,5 @@
 # 🏢 Employee Management Dashboard
 
-A full-stack, Model-View-Controller (MVC) Java web application for managing company employee records. This project demonstrates core backend Java principles, database integration, and responsive frontend design without relying on heavy frameworks like Spring Boot.
-
-## ✨ Features
-* **Read:** View a complete, real-time roster of employees.
-* **Create:** Add new employees to the database via a responsive HTML form.
-* **Delete:** Securely remove employee records with a single click (includes safety confirmation prompts).
-* **Cloud Database Integration:** Fully configured to read/write to a live cloud MySQL database.
-* **Modern UI:** Styled using Tailwind CSS for a clean, responsive, and professional interface.
-
-## 🛠️ Tech Stack
-* **Frontend:** HTML5, Tailwind CSS (CDN), JSP (JavaServer Pages), JSTL (Standard Tag Library)
-* **Backend:** Java 17, Java Servlets (Jakarta EE)
-* **Database:** MySQL (Hosted on Aiven Cloud)
-* **Architecture:** MVC (Model-View-Controller)
-* **Server:** Apache Tomcat 10+
-* **IDE:** Eclipse (Dynamic Web Project)
-
-## 📁 Project Structure
-```text
-src/
-├── main/java/com/company/
-│   ├── controller/
-│   │   └── EmployeeServlet.java    # Handles GET/POST requests and JDBC logic
-│   └── model/
-│       └── Employee.java           # Java object representing a database row
-│
-└── main/webapp/
-    ├── employees.jsp               # The View (UI rendered with Tailwind & JSTL)
-    └── WEB-INF/
-        └── lib/                    # Required JAR files (MySQL driver, JSTL)# 🏢 Employee Management Dashboard
-```
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Tomcat](https://img.shields.io/badge/Tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=black)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
@@ -44,9 +13,7 @@ A full-stack, Model-View-Controller (MVC) Java web application for managing comp
 - [Getting Started](#-getting-started)
   - [Prerequisites](#prerequisites)
   - [Database Setup](#database-setup)
-  - [Installation](#installation)
 - [Project Structure](#-project-structure)
-- [What I Learned](#-what-i-learned)
 
 ## ✨ Features
 * **Read:** View a complete, real-time roster of employees.
@@ -89,4 +56,19 @@ CREATE TABLE employees (
     name VARCHAR(100),
     department VARCHAR(50)
 );
+```
+
+## 📁 Project Structure
+```text
+src/
+├── main/java/com/company/
+│   ├── controller/
+│   │   └── EmployeeServlet.java    # Handles GET/POST requests and JDBC logic
+│   └── model/
+│       └── Employee.java           # Java object representing a database row
+│
+└── main/webapp/
+    ├── employees.jsp               # The View (UI rendered with Tailwind & JSTL)
+    └── WEB-INF/
+        └── lib/                    # Required JAR files (MySQL driver, JSTL)# 🏢 Employee Management Dashboard
 ```
